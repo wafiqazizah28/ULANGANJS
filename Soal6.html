@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keliling Trapesium</title>
+</head>
+<body>
+  <h1>Keliling Trapesium</h1>
+
+  <form id="trapesiumForm">
+    <label for="sisiA">Panjang Sisi A:</label>
+    <input type="number" id="sisiA" required><br><br>
+
+    <label for="sisiB">Panjang Sisi B:</label>
+    <input type="number" id="sisiB" required><br><br>
+
+    <label for="sisiC">Panjang Sisi C:</label>
+    <input type="number" id="sisiC" required><br><br>
+
+    <label for="sisiD">Panjang Sisi D:</label>
+    <input type="number" id="sisiD" required><br><br>
+
+    <button type="button" onclick="hitungKeliling()">Hitung Keliling</button>
+  </form>
+
+  <div id="hasil"></div>
+
+  <script>
+    function hitungKeliling() {
+      var sisiA = parseFloat(document.getElementById("sisiA").value);
+      var sisiB = parseFloat(document.getElementById("sisiB").value);
+      var sisiC = parseFloat(document.getElementById("sisiC").value);
+      var sisiD = parseFloat(document.getElementById("sisiD").value);
+
+      var keliling = sisiA + sisiB + sisiC + sisiD;
+
+      document.getElementById("hasil").innerHTML = "Keliling Trapesium: " + keliling;
+    }
+  </script>
+</body>
+</html
